@@ -20,13 +20,13 @@ The design adapts seamlessly to different screen sizes and devices:
   Optimized for high-resolution, wide displays.
 
   📸 _[Desktop Design Screenshot]_  
-  (</assets/design/screencapture-file-W-Web-Freelance-Yard-Future-You-index-html-2025-04-26-13_20_21.png>)
+  (/assets/design/screencapture-file-W-Web-Freelance-Yard-Future-You-index-html-2025-04-26-13_20_21.png)
 
 - 📱 **Small Screens (Mobile & Tablet Layout):**  
   Optimized for mobile-first design, ensuring perfect viewing on smartphones and tablets.
 
   📸 _[Mobile/Tablet Design Screenshot]_  
-  (</assets/design/screencapture-file-W-Web-Freelance-Yard-Future-You-index-html-2025-04-26-13_24_43.png>)
+  (/assets/design/screencapture-file-W-Web-Freelance-Yard-Future-You-index-html-2025-04-26-13_24_43.png)
 
 All design assets are located inside the folder:  
 `assets/design/`
