@@ -1,0 +1,232 @@
+// import file to font app
+// @import url();
+
+// import file to media cwery
+@import "_breakpoints.scss";
+
+// import create Custom-Scrollbars-&-Selection-color
+@import "_Custom-Scrollbars-&-Selection-color.scss";
+
+// import containerScreen
+@import "_containerScreen.scss";
+
+/*! start variables*/
+// Light Theme Variables
+:root {
+  --color-normal: #ffffff;
+  --color-heading: #48556a;
+  --color-subheading: #8a8a8a;
+
+  --primary-blue: #4a90e2;
+  --accent-red: #d0021b;
+  --background-light: #f9f9f9;
+  --text-dark: #333;
+  --primary-blue-hover: hsl(210, 57%, 53%);
+  --primary-blue-lighter: hsl(210, 92%, 85%);
+  --primary-blue-second: hsl(210, 40%, 80%);
+  --first-color-alt: hsl(210, 57%, 53%);
+
+  --heading-font: "Arial", sans-serif;
+  --body-font: "Verdana", sans-serif;
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 600;
+  --font-max-bold: 700;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+  --header-height: 3rem;
+  --tr: 600ms;
+}
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+// Dark Theme Variables
+body.dark-theme {
+  --primary-blue: #6ca8f1;
+  --accent-red: #ff4d4d;
+  --background-light: #1e1e1e;
+  --text-dark: #f5f5f5;
+  --primary-blue-second: hsl(210, 30%, 8%);
+}
+
+/*! end variables*/
+/*! start Global Rules*/
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  line-height: 1.15;
+  [data-pos="fade-left"],
+  [data-pos="fade-right"],
+  [data-pos="fade-up"] {
+    transition-duration: 0.8s;
+    pointer-events: auto;
+    transition-property: opacity, transform, -webkit-transform;
+  }
+  [data-pos="fade-right"] {
+    -webkit-transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-100px, 0, 0);
+  }
+  [data-pos="fade-left"] {
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+  [data-pos="fade-up"] {
+    -webkit-transform: translate3d(0, 100px, 0) scale(0.6);
+    transform: translate3d(0, 100px, 0) scale(0.6);
+  }
+  [data-pos-duration="2000"] {
+    transition-duration: 2s !important;
+  }
+  [data-pos-duration="3000"] {
+    transition-duration: 3s !important;
+  }
+  [data-pos="fade-right"].active,
+  [data-pos="fade-left"].active,
+  [data-pos="fade-up"].active {
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.section-show {
+  scale: 0.9;
+  opacity: 0;
+  transition: 0.8s;
+  transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+
+.section-show.active {
+  opacity: 1;
+  top: 0;
+  scale: none;
+}
+
+// Body Styling
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  // height: 10000px;
+}
+
+/*! end Global Rules*/
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  display: inline-block;
+  font: {
+    family: var(--body-font);
+  }
+  &:hover {
+    color: var(--accent-red);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  text-align: center;
+}
+.section-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+  text-align: center;
+}
+%btn {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  .button-icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+  }
+  &:hover {
+    background-color: var(--first-color-alt);
+  }
+}
+
+/*! start button back to top  */
+
+/*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--primary-blue);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  background-color: var(--primary-blue-hover);
+}
+
+.scrollup-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Show scroll */
+.show-scroll {
+  bottom: 5rem;
+}
+/*! end button back to top  */

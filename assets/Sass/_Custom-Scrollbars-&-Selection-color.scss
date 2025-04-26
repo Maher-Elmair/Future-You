@@ -1,0 +1,38 @@
+/* end variables */
+
+:root {
+  --scroll-bar-color: hsl(210, 12%, 90%);
+  --scroll-thumb-color: hsl(210, 12%, 80%);
+  --first-color: hsl(210, 69%, 61%);
+}
+body.dark-theme {
+  /* HSL color mode */
+  --scroll-bar-color: hsl(210, 12%, 44%);
+  --scroll-thumb-color: hsl(210, 12%, 36%);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-left: 0 solid none;
+  border-right: 0 solid none;
+  margin-block: 3px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  width: 15% !important;
+  height: 15% !important;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+  background-color: var(--first-color);
+  cursor: pointer;
+}
