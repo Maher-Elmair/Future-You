@@ -24,8 +24,6 @@ The design adapts seamlessly to different screen sizes and devices:
 - 📱 **Small Screens (Mobile & Tablet Layout):**  
   Optimized for mobile-first design, ensuring perfect viewing on smartphones and tablets.
 
-  📸 ![Mobile/Tablet Design Screenshot](/assets/design/screencapture-file-W-Web-Freelance-Yard-Future-You-index-html-2025-04-26-13_24_43.png)
-
 All design assets are located inside the folder:  
 `assets/design/`
 
