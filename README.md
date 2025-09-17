@@ -1,108 +1,100 @@
-# 🚀 Personal Portfolio Page
+# 💼 Future You Portfolio – My First Freelance Project  
 
-**Project Name:**  
-Personal Portfolio Page for **Freelance Yard** Client.
+This is my first freelance project delivered on **Freelance Yard**.  
+The client requested a **personal portfolio website** with a modern and responsive design.  
+I officially applied for the project on **Sunday, April 20, 2025 at 10:17 PM**.  
 
----
-
-## 🧩 Project Description
-
-This is a clean, fully responsive, and modern personal portfolio page developed for a client via Freelance Yard.  
-The page highlights the client's skills, past projects, and contact details with a strong focus on **readable typography**, **flexible layouts**, and **professional design**.
 
 ---
 
-## 🎨 Design Overview
+## 📸 Screenshots
 
-The design adapts seamlessly to different screen sizes and devices:
+### 🖥️ Desktop View
 
-- 🖥️ **Large Screens (Desktop Layout):**  
-  Optimized for high-resolution, wide displays.
-
-  📸 ![Desktop Design Screenshot](/assets/design/screencapture-file-W-Web-Freelance-Yard-Future-You-index-html-2025-04-26-13_20_21.png)
-
-- 📱 **Small Screens (Mobile & Tablet Layout):**  
-  Optimized for mobile-first design, ensuring perfect viewing on smartphones and tablets.
-
-All design assets are located inside the folder:  
-`assets/design/`
+### ☀️ Light Mode (Desktop View)  
+![Desktop Design Screenshot](/assets/design/screencapture-file-W-Web-Freelance-Yard-Future-You-index-html-2025-04-26-13_20_21.png)  
 
 ---
 
-## 🌟 Key Features
-
-- ⚡ **Fully Responsive** — Works flawlessly across desktops, tablets, and smartphones.
-- 🎯 **Clean & Modern UI** — Built with the latest front-end trends and best practices.
-- 🎨 **Easily Customizable** — Replace images easily within the assets folder.
-- 🧹 **Well-Organized Codebase** — Clear, easy to navigate, and maintain.
+### 🌙 Dark Mode (Desktop View)  
+![Dark Mode Screenshot](/assets/design/screencapture-file-W-Web-Freelance-Yard-Future-You-index-html-2025-04-26-13_23_38.png)  
 
 ---
 
-## 🔧 Project Environment
+## 📖 Project Overview  
 
-- **Main Files:**
-
-  - `index.html`
-  - `README.md`
-
-- **assets/** folder includes:
-  - `/css/` — Compiled CSS files
-  - `/sass/` — SCSS source files
-  - `/images/` — All project images
-  - `/design/` — Project design screenshots
-  - `/javascript/` — JavaScript files
-
-Everything except `index.html` and `README.md` is neatly organized inside the `assets/` directory.
+- ⏳ **Deadline**: 3 Days only.  
+- 🎨 **Client Inputs**: Only the **business field** and **preferred colors** were provided.  
+- 📷 **Challenges**: No images or content were delivered, which increased the difficulty of the project.  
+- 🛠️ **Technologies Used**:  
+  - HTML5  
+  - CSS3  
+  - **SCSS (Sass)** for clean and maintainable styles  
+  - JavaScript  
+  - Responsive Design Techniques  
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure  
 
 ```
+
 Future-You-Portfolio/
 │
 ├── assets/
-│   ├── css/
-│   ├── sass/
+│   ├── Css/
+│   │   ├── swiper-bundle.min.css
+│   │   ├── style.css.map
+│   │   ├── style.css
+│   │   └── Normalize.css
+│   │
 │   ├── images/
-│   ├── design/
-│   └── javascript/
+│   │   ├── about-Image.png
+│   │   ├── Your-Image.png
+│   │   ├── favicon-32x32.png
+│   │   └── ....
+│   │
+│   ├── JavaScript/
+│   │   ├── app.js
+│   │   └── swiper-bundle.min.js
+│   │
+│   └── Sass/
+│       ├── style.scss
+│       ├── \_globalStyle.scss
+│       ├── \_Custom-Scrollbars-&-Selection-color.scss
+│       ├── \_containerScreen.scss
+│       └── \_breakpoints.scss
 │
 ├── index.html
 └── README.md
+
 ```
 
 ---
 
-## 💻 How to Use
-
-1. Download and extract the project files.
-2. Open `index.html` with any browser to view the project locally.
-3. To replace images, navigate to `assets/images/` and update:
-   - Main Image: Replace it with your image named `Your-Image`.
-   - About Section Image: Replace it with your image named `about-image`.
-4. Upload the project to any hosting platform (e.g., Netlify, Vercel, GitHub Pages).
-
----
-
-## 🌐 Live Preview
+## 🌐 Live Preview  
 
 You can preview the live project here:  
-👉 [https://dazzling-panda-9b3d9f.netlify.app/](https://dazzling-panda-9b3d9f.netlify.app/)
+
+- 🚀 **Netlify Deployment:** [https://dazzling-panda-9b3d9f.netlify.app/](https://dazzling-panda-9b3d9f.netlify.app/)  
+- 🔗 **GitHub Pages:** [https://maher-elmair.github.io/Future-You/](https://maher-elmair.github.io/Future-You/)  
 
 ---
 
-## 📞 Contact
+## 🧑‍💻 Author  
 
-If you have any questions or need assistance, feel free to reach out:
+**Maher Elmair**  
 
-- ✉️ **Email:** maher.elmair.dev@gmail.com
-- 👨‍💻 **Developer:** Maher Elmair
-- 🌍 **Portfolio Website:** Coming Soon!
+- 📫 [maher.elmair.dev@gmail.com](mailto:maher.elmair.dev@gmail.com)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/maher-elmair)  
+- ✖️ [X (Twitter)](https://x.com/Maher_Elmair)  
+- ❤️ Made with passion by [Maher Elmair](https://maher-elmair.github.io/My_Website)  
 
 ---
 
-> Developed with passion, precision, and attention to detail by Maher Elmair.  
-> Thank you for your trust and collaboration!
+## 🙌 Thank You  
+
+If you liked the project, please ⭐ the repository!  
+Feel free to open issues or submit pull requests with improvements 🙏  
 
 ---
